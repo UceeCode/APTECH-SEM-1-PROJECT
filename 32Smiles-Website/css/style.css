@@ -69,17 +69,11 @@ nav .home{
     animation: changeBackground 50s linear infinite;
 }
 @keyframes changeBackground {
-    10%, 100% {
-        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
-    }
-    25%, 49% {
+    10%, 50% {
         background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
     }
-    50% {
-        background-image: url('../Images/pexels-anna-shvets-3845766.jpg');
-    }
-    75%, 85% {
-        background-image: url('../Images/pexels-sora-shimazaki-5938296.jpg');
+    60%, 100% {
+        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
     }
 }
 
@@ -90,10 +84,32 @@ nav .home{
     background-color: var(--blue);
     width: 18%;
     position: relative;
-    left: 150px;
+    left: 110px;
     padding: 3px;
     border-radius: 5px;
-    top: 230px;
+    top: 250px;
     font-size: 17px;
     text-align: center;
+}
+.main-text{
+    position: relative;
+    top: 280px;
+    width: 41%;
+    left: 110px;
+    font-family: sans-serif;
+    line-height: 24px;
+    font-size: 14px;
+    text-align: justify;
+    color: white;
+}
+.main-text .main-one{
+    margin-bottom: 25px;
+
+}
+.main-two{
+    position: relative;
+}
+.contact{
+    position: relative;
+    top: 20px;
 }
