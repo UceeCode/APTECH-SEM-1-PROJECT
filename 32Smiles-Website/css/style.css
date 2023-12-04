@@ -4,21 +4,33 @@
     --font1-color: #F6F4F3;
     --logo-font-fam: "Montserrat", san-serif;
 }
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     text-transform: capitalize;
     transition: .5s;
     scroll-behavior: smooth;
 }
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 13vh;
     background-color: var(--blue);
     padding: 15px;
+    z-index: 1000;
 }
 header .logo{
     color: var(--font1-color);
@@ -49,13 +61,39 @@ nav .home{
     padding-bottom: 5px;
 }
 .main{
-    height: 87vh;
+    height: 100vh;
     background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;
+    animation: changeBackground 50s linear infinite;
 }
+@keyframes changeBackground {
+    10%, 100% {
+        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
+    }
+    25%, 49% {
+        background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
+    }
+    50% {
+        background-image: url('../Images/pexels-anna-shvets-3845766.jpg');
+    }
+    75%, 85% {
+        background-image: url('../Images/pexels-sora-shimazaki-5938296.jpg');
+    }
+}
+
+
 .head{
-    font-family: sans-serif;
-    color: var(--blue);
+    font-family: cursive;
+    color: var(--font1-color);
+    background-color: var(--blue);
+    width: 18%;
+    position: relative;
+    left: 150px;
+    padding: 3px;
+    border-radius: 5px;
+    top: 230px;
+    font-size: 17px;
+    text-align: center;
 }
