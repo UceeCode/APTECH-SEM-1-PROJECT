@@ -48,3 +48,10 @@ nav .home{
     border-bottom: 3px solid white;
     padding-bottom: 5px;
 }
+.main{
+    height: 100vh;
+    background-image: url(../Images/about-our-office.jpeg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
