@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nova+Square&family=Roboto+Slab&display=swap');
+:root{
+    --blue: #183059;
+    --font1-color: #F6F4F3;
+    --logo-font-fam: "Montserrat", san-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: var(--blue);
+    padding: 15px;
+}
+header .logo{
+    color: var(--font1-color);
+    font-family: var(--logo-font-fam);
+    font-size: 13px;
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+}
+header .logo .fa-tooth{
+    position: relative;
+    right: 4px;
+    font-size: 30px;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--font1-color);
+    font-family: sans-serif;
+    margin: 17px;
+    font-size: 15px;
+}
+header nav a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+nav .home{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
