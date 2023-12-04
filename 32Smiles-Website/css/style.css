@@ -49,9 +49,13 @@ nav .home{
     padding-bottom: 5px;
 }
 .main{
-    height: 100vh;
-    background-image: url(../Images/about-our-office.jpeg);
+    height: 87vh;
+    background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
     background-size: cover;
     background-position: center;
     max-width: 100%;
+}
+.head{
+    font-family: sans-serif;
+    color: var(--blue);
 }
