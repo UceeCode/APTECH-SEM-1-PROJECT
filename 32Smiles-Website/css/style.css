@@ -119,9 +119,11 @@ nav .home{
     color: var(--font1-color);
     border-radius: 5px;
     font-size: 15px;
+    text-transform: uppercase;
 }
 .contact:hover{
-    
+    background: none;
+    border: 2px solid white;
 }
 .contact i{
     margin-left: 7px;
