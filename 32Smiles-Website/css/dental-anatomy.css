@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nova+Square&family=Roboto+Slab&display=swap');
+:root{
+    --blue: #183059;
+    --font1-color: #F6F4F3;
+    --logo-font-fam: "Montserrat", san-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    transition: .5s;
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: var(--blue);
+    padding: 15px;
+    z-index: 1000;
+}
+header .logo{
+    color: var(--font1-color);
+    font-family: var(--logo-font-fam);
+    font-size: 13px;
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+}
+header .logo .fa-tooth{
+    position: relative;
+    right: 4px;
+    font-size: 30px;
+}
+header nav a{
+    text-decoration: none;
+    color: var(--font1-color);
+    font-family: sans-serif;
+    margin: 17px;
+    font-size: 15px;
+}
+header nav a:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+nav .home{
+    border-bottom: 3px solid white;
+    padding-bottom: 5px;
+}
+.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 185px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-bottom: 5px;
+}
+.dropdown-content a{
+    color: var(--blue);
+    text-align: center;
+}
+.dropdown-content a:hover{
+    background-color: var(--blue);
+    color: white;
+    padding: 6px 25px;
+    border-radius: 4px;
+}
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border-radius: 5px;
+}
