@@ -3,6 +3,8 @@
     --blue: #183059;
     --font1-color: #F6F4F3;
     --logo-font-fam: "Montserrat", san-serif;
+    --coffee: #43281c;
+    --vanilla: #f1e3d3;
 }
 
 html {
@@ -138,7 +140,7 @@ nav .home{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 185px;
+    min-width: 220px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding-bottom: 5px;
@@ -160,14 +162,346 @@ nav .home{
     border-radius: 5px;
 }
 .professional-edu{
-    height: 100vh;
+  height: 65vh;
 }
 .professional-edu .prof-head{
+  text-align: center;
+  font-family: var(--logo-font-fam);
+  margin-top: 35px;
+  line-height: 50px;
+}
+.courses{
+  font-family: sans-serif;
+  margin-left: 45px;
+  position: relative;
+  top: 55px;
+}
+.courses h3{
+  color: var(--blue);
+  font-size: 39px;
+  margin-bottom: 15px;
+}
+.courses i{
+  margin-right: 10px;
+}
+.course-box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  top: 35px;
+  right: 105px;
+}
+.one{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+  background-color: var(--blue);
+  color: var(--font1-color);
+  border-radius: 6px;
+}
+.one ul{
+  list-style-type: square;
+}
+.one a{
+  text-decoration: none;
+  color: white;
+}
+.help{
+  position: relative;
+  top: 130px;
+  font-family: sans-serif;
+  margin-left: 45px;
+  position: relative;
+}
+.help i{
+  margin-right: 10px;
+}
+.help h3{
+  color: var(--blue);
+  font-size: 39px;
+  margin-bottom: 15px;
+}
+.help-box{
+  margin-left: 15px;
+  position: relative;
+  top: 20px;
+}
+.help-box a{
+  text-decoration: underline;
+  color: black;
+  margin: 25px;
+}
+.help-box a:hover{
+  color: blue;
+}
+.help-box ul{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+.faculty{
+  position: relative;
+  top: 169px;
+  font-family: sans-serif;
+  margin-left: 35px;
+  position: relative;
+}
+.faculty h3{
+  color: var(--blue);
+  font-size: 39px;
+  margin-bottom: 15px;
+}
+.faculty i{
+  margin-right: 10px;
+}
+
+.course-text {
+  margin-left: 35px;
+  font-size: 23px;
+}
+
+h3 {
+    font-size: 34px;
+    font-family: sans-serif;
+    margin-left: 40px;
+}
+
+.prof-info-text {
+    font-family: sans-serif;
+    font-size: 23px;
+}
+
+.Patient-education-text {
     text-align: center;
-    font-family: var(--logo-font-fam);
-    margin-top: 35px;
-    line-height: 50px;
+    font-size: 44px;
+    font-weight: 500;
+    margin-top: 500px;
 }
-.prof-head h1{
+
+.panels{
+    list-style-type: none;
+    padding: 0;
+}
+
+.panels .texts{
+    position: relative;
+    margin-top: 50px;
+    width: 25%;
+    display: block;
+    box-sizing: border-box;
+    float: left;
     
+  }
+
+  .student{
+    position: relative;
+    top: 40px;
+    font-family: sans-serif;
+    left: -15px;
+    position: relative; 
 }
+.student h3{
+    color: var(--blue);
+    font-size: 39px;
+    margin-bottom: 15px;
+}
+.student i{
+  margin-right: 10px; 
+}
+  
+  .panels .texts div{
+    width: 90%;
+    padding: 50% 0;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 0;
+    cursor: pointer;
+  }
+  
+  
+
+  .panels div.back {
+    transform: rotateY(90deg);
+    height: 30px;
+  }
+
+  .panels div.front {
+      position: absolute;
+  }
+
+  .panels li:hover div.front{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels li:hover div.front-6{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back-6{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels li:hover div.front-7{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back-7{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+
+  .panels div.back-2 {
+    transform: rotateY(90deg);
+    height: 30px;
+  }
+
+  .panels div.back-3 {
+    transform: rotateY(90deg);
+    height: 30px;
+  }
+
+  .panels div.back-4 {
+    transform: rotateY(90deg);
+    height: 30px;
+  }
+
+  .panels div.back-5 {
+    transform: rotateY(90deg);
+    height: 30px;
+  }
+
+  .panels div.back-6 {
+    transform: rotateY(90deg);
+    height: 30px;
+  }
+
+  .panels div.front-6 {
+    position: absolute;
+}
+
+.panels div.back-7 {
+  transform: rotateY(90deg);
+  height: 30px;
+}
+
+.panels div.front-7 {
+  position: absolute;
+}
+
+  .panels div.front {
+      position: absolute;
+  }
+
+  .panels div.front-2 {
+    position: absolute;
+}
+
+.panels div.front-3 {
+    position: absolute;
+}
+.panels div.front-4 {
+    position: absolute;
+}
+.panels div.front-5 {
+    position: absolute;
+}
+
+  .panels li:hover div.front{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels li:hover div.front-2{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back-2{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels li:hover div.front-3{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back-3{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels li:hover div.front-4{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back-4{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels li:hover div.front-5{
+    animation: twirl 0.2s ease-in forwards;
+  }
+
+  .panels li:hover div.back-5{
+    animation: twirl 0.2s 0.2s ease-out forwards reverse;
+  }
+
+  .panels-2 {
+    top: 60px;
+    position: relative;
+  }
+
+  .panel {
+    margin-left: 55px;
+  }
+
+  .oral {
+    width: 30%;
+  }
+
+  .orals {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.orals .texts-1 {
+    top: -170px;
+    font-size: 17px;
+    line-height: 1.6;
+    text-align: justify;
+    position: relative;
+    font-family: sans-serif;
+    color: black;
+}
+
+.orals .texts-1:before {
+    color: #009688; 
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+}
+
+h5 {
+  top: -190px;
+  position: relative;
+  color: black;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+
+  @keyframes twirl{
+    0%{transform:rotateY(0deg)}
+    100%{transform:rotateY(90deg)}
+  }
