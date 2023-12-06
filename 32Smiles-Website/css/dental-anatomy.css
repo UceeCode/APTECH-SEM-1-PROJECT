@@ -88,3 +88,13 @@ nav .home{
     margin-top: 10px;
     border-radius: 5px;
 }
+.info{
+    height: 100vh;
+    position: relative;
+}
+.info h1{
+    position: relative;
+    top: 130px;
+    font-family: var(--logo-font-fam);
+    text-align: center;
+}
