@@ -156,3 +156,15 @@ nav .home{
     margin-top: 10px;
     border-radius: 5px;
 }
+.professional-edu{
+    height: 100vh;
+}
+.professional-edu .prof-head{
+    text-align: center;
+    font-family: var(--logo-font-fam);
+    margin-top: 35px;
+    line-height: 50px;
+}
+.prof-head h1{
+    
+}
