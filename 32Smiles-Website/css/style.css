@@ -158,7 +158,7 @@ nav .home{
 }
 
 .professional-edu{
-    height: 100vh;
+    height: 190vh;
 }
 .professional-edu .prof-head{
     text-align: center;
@@ -252,4 +252,19 @@ nav .home{
 }
 .faculty i{
     margin-right: 10px;
+}
+.student{
+    position: relative;
+    top: 210px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative; 
+}
+.student h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.student i{
+    margin-right: 10px; 
 }
