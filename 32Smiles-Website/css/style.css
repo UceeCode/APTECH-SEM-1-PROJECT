@@ -131,4 +131,7 @@ nav .home{
 .professional-edu{
     height: 100vh;
 }
+.professional-edu .prof-head{
+    text-align: center;
+}
 
