@@ -165,6 +165,41 @@ nav .home{
     margin-top: 35px;
     line-height: 50px;
 }
-.prof-head h1{
-    
+.courses{
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative;
+    top: 55px;
+}
+.courses h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.courses i{
+    margin-right: 10px;
+}
+.course-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    right: 105px;
+}
+.one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    background-color: var(--blue);
+    color: var(--font1-color);
+}
+.one ul{
+    list-style-type: square;
+}
+.one a{
+    text-decoration: none;
+    color: white;
 }
