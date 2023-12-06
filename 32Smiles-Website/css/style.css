@@ -195,6 +195,7 @@ nav .home{
     width: 200px;
     background-color: var(--blue);
     color: var(--font1-color);
+    border-radius: 6px;
 }
 .one ul{
     list-style-type: square;
