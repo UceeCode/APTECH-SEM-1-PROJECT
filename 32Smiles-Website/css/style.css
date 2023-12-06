@@ -228,8 +228,28 @@ nav .home{
 .help-box a{
     text-decoration: underline;
     color: black;
-    margin: 20px;
+    margin: 25px;
 }
 .help-box a:hover{
     color: blue;
+}
+.help-box ul{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+.faculty{
+    position: relative;
+    top: 169px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative;
+}
+.faculty h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.faculty i{
+    margin-right: 10px;
 }
