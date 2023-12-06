@@ -205,3 +205,31 @@ nav .home{
     text-decoration: none;
     color: white;
 }
+.help{
+    position: relative;
+    top: 130px;
+    font-family: sans-serif;
+    margin-left: 45px;
+    position: relative;
+}
+.help i{
+    margin-right: 10px;
+}
+.help h3{
+    color: var(--blue);
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.help-box{
+    margin-left: 15px;
+    position: relative;
+    top: 20px;
+}
+.help-box a{
+    text-decoration: underline;
+    color: black;
+    margin: 20px;
+}
+.help-box a:hover{
+    color: blue;
+}
