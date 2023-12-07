@@ -277,3 +277,69 @@ nav .home{
 .student i{
     margin-right: 10px; 
 }
+.patient-edu {
+    height: 100vh;
+    /*background-color: #183059;*/
+    padding: 50px 20px; /* Adjust padding as needed */
+}
+
+.patient-head {
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
+
+.patient-head h1 {
+    margin-bottom: 15px;
+}
+
+.patient-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.edu-card {
+    height: 40vh;
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.edu-card h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: var(--logo-font-fam);
+}
+
+.edu-card p {
+    font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.edu-card a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: white;
+    color: var(--blue);
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.edu-card a:hover {
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
