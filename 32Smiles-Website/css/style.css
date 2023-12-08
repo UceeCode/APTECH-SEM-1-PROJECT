@@ -344,3 +344,16 @@ nav .home{
     color: white;
     border: 2px solid white;
 }
+.research{
+   height: 100vh;
+   background-color: #183059;
+   color: white;
+}
+.research-head{
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
+.research-head h1{
+    position: relative;
+    top: 25px;
+}
