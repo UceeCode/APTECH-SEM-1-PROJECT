@@ -278,7 +278,7 @@ nav .home{
     margin-right: 10px; 
 }
 .patient-edu {
-    height: 100vh;
+    height: 110vh;
     /*background-color: #183059;*/
     padding: 50px 20px; /* Adjust padding as needed */
 }
@@ -346,7 +346,7 @@ nav .home{
 }
 .research{
    height: 100vh;
-   background-color: #183059;
+   background-color: var(--blue);
    color: white;
 }
 .research-head{
@@ -356,4 +356,8 @@ nav .home{
 .research-head h1{
     position: relative;
     top: 25px;
+}
+.research-head p{
+    position: relative;
+    top: 45px;
 }
