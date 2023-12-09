@@ -336,7 +336,6 @@ nav .home{
     font-family: sans-serif;
     border-radius: 5px;
     font-size: 14px;
-    transition: background-color 0.3s ease;
 }
 
 .edu-card a:hover {
@@ -368,7 +367,7 @@ nav .home{
 }
 
 .research-card {
-    width: 350px;
+    width: 355px;
     margin: 20px;
     padding: 20px;
     background-color: #fff;
@@ -386,8 +385,12 @@ nav .home{
     background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
     background-position: center;
     background-size: cover;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.research-img:hover{
+    transform: scale(1.1);
 }
 #two{
     background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
