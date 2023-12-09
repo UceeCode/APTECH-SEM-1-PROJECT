@@ -107,10 +107,10 @@ nav .home{
 }
 @keyframes changeBackground {
     10%, 50% {
-        background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
+        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
     }
     60%, 100% {
-        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
+        background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
     }
 }
 
@@ -279,8 +279,7 @@ nav .home{
 }
 .patient-edu {
     height: 110vh;
-    /*background-color: #183059;*/
-    padding: 50px 20px; /* Adjust padding as needed */
+    padding: 50px 20px;
 }
 
 .patient-head {
@@ -385,7 +384,7 @@ nav .home{
     background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
     background-position: center;
     background-size: cover;
-    margin-bottom: 20px;
+    margin-bottom: px;
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
