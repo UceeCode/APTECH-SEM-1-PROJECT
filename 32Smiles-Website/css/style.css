@@ -377,19 +377,19 @@ nav .home{
     top: 75px;
 }
 .research-img{
-    margin: 0 auto;
+    margin: 5px auto;
     height: 200px;
     width: 300px;
     object-fit: cover;
     background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
     background-position: center;
     background-size: cover;
-    margin-bottom: px;
     border-radius: 5px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .research-img:hover{
     transform: scale(1.1);
+    margin-bottom: 15px;
 }
 #two{
     background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
