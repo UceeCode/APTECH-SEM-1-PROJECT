@@ -361,3 +361,77 @@ nav .home{
     position: relative;
     top: 45px;
 }
+.research-articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.research-card {
+    width: 350px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: 75px;
+}
+.research-img{
+    margin: 0 auto;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+#two{
+    background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
+}
+#three{
+    background-image: url(../Images/pexels-daniel-frank-305568.jpg);
+}
+.research-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: var(--logo-font-fam);
+}
+
+.research-card p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.research-card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 7px 17px;
+    background-color: var(--blue);
+    color: white;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.research-card a:hover {
+    background: none;
+    border: 2px solid var(--blue);
+    color: black;
+}
+.research-card .video{
+    display: block;
+    background-color: #eee;
+    color: black;
+    padding: 9px;
+    border: 1px solid var(--blue);
+}
