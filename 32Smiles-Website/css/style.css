@@ -441,3 +441,15 @@ nav .home{
     padding: 9px;
     border: 1px solid var(--blue);
 }
+.products{
+    height: 100vh;
+}
+.products-head{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-family: var(--logo-font-fam);
+}
+.products-head p{
+    margin-top: 30px;
+}
