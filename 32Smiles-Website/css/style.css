@@ -511,6 +511,21 @@ nav .home{
     background-position: center;
     background-size: cover;
 }
+#img-7{
+    background: url(../Images/pngwing.com\ \(7\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-8{
+    background: url(../Images/pngwing.com\ \(8\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-10{
+    background: url(../Images/pngwing.com\ \(10\).png);
+    background-position: center;
+    background-size: cover;
+}
 
 .product-card h2 {
     margin-top: 10px;
