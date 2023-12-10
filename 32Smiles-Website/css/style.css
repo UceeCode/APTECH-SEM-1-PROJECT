@@ -558,3 +558,11 @@ nav .home{
 .product-card a:hover {
     background-color: #35477d;
 }
+.contact-us{
+    height: 100vh;
+    
+}
+.contact-us h1{
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
