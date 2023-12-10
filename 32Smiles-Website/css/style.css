@@ -167,12 +167,13 @@ nav .home{
 }
 
 .professional-edu{
-    height: 154vh;
+    height: 150vh;
 }
 .professional-edu .prof-head{
     text-align: center;
     font-family: var(--logo-font-fam);
-    margin-top: 35px;
+    position: relative;
+    top: 35px;
     line-height: 50px;
 }
 .courses{
