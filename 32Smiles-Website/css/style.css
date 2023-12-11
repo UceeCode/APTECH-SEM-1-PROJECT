@@ -59,7 +59,7 @@ header nav a{
     color: var(--font1-color);
     font-family: sans-serif;
     margin: 17px;
-    font-size: var(--h2);
+    font-size: 14px
 }
 header nav a:hover{
     border-bottom: 3px solid white;
@@ -124,32 +124,37 @@ nav .home{
     left: 110px;
     padding: 3px;
     border-radius: 5px;
-    top: 230px;
+    top: 270px;
     font-size: var(--h1);
     text-align: center;
 }
 .main-text{
     position: relative;
-    top: 255px;
+    top: 285px;
     width: 41%;
     left: 110px;
     font-family: sans-serif;
-    line-height: 24px;
-    font-size: var(--h2);
+    line-height: 26px;
+    font-size: var(--h2 );
     text-align: justify;
     color: white;
 }
 .main-head{
-    font-size: 45px;
-    line-height: 55px;
+    position: relative;
+    top: 25px;
+    font-size: 50px;
+    line-height: 59px;
     margin-bottom: 10px;
 }
 .main-text .main-one{
     margin-bottom: 21px;
+    position: relative;
+    top: 35px;
 
 }
 .contact{
     position: relative;
+    top: 43px;
     padding: 10px 35px;
     border: none;
     background-color: var(--blue);
@@ -167,7 +172,7 @@ nav .home{
 }
 
 .professional-edu{
-    height: 150vh;
+    height: 130vh;
 }
 .professional-edu .prof-head{
     text-align: center;
@@ -300,7 +305,7 @@ nav .home{
 
 .edu-card {
     height: 40vh;
-    width: 350px;
+    width: 355px;
     margin: 20px;
     padding: 20px;
     background-color: var(--blue);
@@ -347,7 +352,7 @@ nav .home{
     border: 2px solid white;
 }
 .research{
-   height: 100vh;
+   height: 90vh;
    background-color: var(--blue);
    color: white;
 }
@@ -394,7 +399,7 @@ nav .home{
 }
 .research-img:hover{
     transform: scale(1.1);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 #two{
     background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
@@ -443,7 +448,7 @@ nav .home{
     border: 1px solid var(--blue);
 }
 .products{
-    height: 215vh;
+    height: 190vh;
 }
 .products-head{
     text-align: center;
@@ -559,10 +564,93 @@ nav .home{
     background-color: #35477d;
 }
 .contact-us{
-    height: 100vh;
+    height: 80vh;
     
 }
-.contact-us h1{
+.contact-head{
     text-align: center;
+    position: relative;
+    top: 25px;
     font-family: var(--logo-font-fam);
+}
+.contact-head p{
+    margin-top: 30px;
+}
+.contacts{
+    display: flex;
+}
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #183059;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #35477d;
+}
+
+
+.contact-professionals {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.professional-card {
+    width: 300px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #eee;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.professional-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: var(--logo-font-fam);
+}
+
+.professional-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.location-map {
+    height: 150px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
