@@ -34,19 +34,26 @@ header{
     padding: 15px;
     z-index: 1000;
 }
-header .logo{
-    color: var(--font1-color);
-    font-family: var(--logo-font-fam);
-    font-size: 13px;
-    position: relative;
-    left: 15px;
-    cursor: pointer;
+
+.logo-img {
+  width: 10%;
+  position: relative;
+  top: 1px;
 }
-header .logo .fa-tooth{
-    position: relative;
-    right: 4px;
-    font-size: 30px;
+
+.logo {
+  display: flex;
+  text-decoration: none;
 }
+
+.logo-text {
+  color: #fff;
+  font-family: var(--logo-font-fam);
+  top: 15px;
+  position: relative;
+  left:-1px;
+}
+
 header nav a{
     text-decoration: none;
     color: var(--font1-color);
@@ -295,7 +302,6 @@ h3 {
     float: left;
     
   }
-
   .student{
     position: relative;
     top: 40px;
@@ -312,196 +318,348 @@ h3 {
   margin-right: 10px; 
 }
   
-  .panels .texts div{
-    width: 90%;
-    padding: 50% 0;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 0;
-    cursor: pointer;
-  }
-  
-  
 
-  .panels div.back {
-    transform: rotateY(90deg);
-    height: 30px;
-  }
-
-  .panels div.front {
-      position: absolute;
-  }
-
-  .panels li:hover div.front{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels li:hover div.front-6{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back-6{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels li:hover div.front-7{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back-7{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-
-  .panels div.back-2 {
-    transform: rotateY(90deg);
-    height: 30px;
-  }
-
-  .panels div.back-3 {
-    transform: rotateY(90deg);
-    height: 30px;
-  }
-
-  .panels div.back-4 {
-    transform: rotateY(90deg);
-    height: 30px;
-  }
-
-  .panels div.back-5 {
-    transform: rotateY(90deg);
-    height: 30px;
-  }
-
-  .panels div.back-6 {
-    transform: rotateY(90deg);
-    height: 30px;
-  }
-
-  .panels div.front-6 {
-    position: absolute;
-}
-
-.panels div.back-7 {
-  transform: rotateY(90deg);
-  height: 30px;
-}
-
-.panels div.front-7 {
-  position: absolute;
-}
-
-  .panels div.front {
-      position: absolute;
-  }
-
-  .panels div.front-2 {
-    position: absolute;
-}
-
-.panels div.front-3 {
-    position: absolute;
-}
-.panels div.front-4 {
-    position: absolute;
-}
-.panels div.front-5 {
-    position: absolute;
-}
-
-  .panels li:hover div.front{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels li:hover div.front-2{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back-2{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels li:hover div.front-3{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back-3{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels li:hover div.front-4{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back-4{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels li:hover div.front-5{
-    animation: twirl 0.2s ease-in forwards;
-  }
-
-  .panels li:hover div.back-5{
-    animation: twirl 0.2s 0.2s ease-out forwards reverse;
-  }
-
-  .panels-2 {
-    top: 60px;
-    position: relative;
-  }
-
-  .panel {
-    margin-left: 55px;
-  }
-
-  .oral {
-    width: 30%;
-  }
-
-  .orals {
-    list-style-type: none;
-    padding: 20px;
-}
-
-.orals .texts-1 {
-    top: -170px;
-    font-size: 17px;
-    line-height: 1.6;
-    text-align: justify;
-    position: relative;
+  h4 {
+    margin-top: 530px;
     font-family: sans-serif;
-    color: black;
-}
-
-.orals .texts-1:before {
-    color: #009688; 
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
-
-}
-
-h5 {
-  top: -190px;
-  position: relative;
-  color: black;
-  font-size: 18px;
-  font-family: sans-serif;
-}
-
-
-  @keyframes twirl{
-    0%{transform:rotateY(0deg)}
-    100%{transform:rotateY(90deg)}
+    font-size: 38px;
+    font-weight: 400;
+    margin-left: 800px;
+    border-bottom: 3px solid #183059;
+    width: 16%;
   }
+
+  h5 {
+    position: relative;
+    top: -65px;
+  }
+
+  .scaling-1 {
+    background-color: #183059;
+    width: 25%;
+    height: 25vh;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px;
+  }
+
+  .scaling-2 {
+    background-color: #183059;
+    width: 28%;
+    height: 25vh;
+    margin-left: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px;
+  }
+
+  .scaling-3 {
+    background-color: #183059;
+    width: 28%;
+    height: 25vh;
+    margin-left: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
+    color: white;
+    padding: 10px;
+  }
+
+
+  .container-1 {
+    display: flex;
+    margin-top: 40px;
+    margin-left: 250px;
+  }
+
+  h5 {
+    margin-left: 50px;
+    font-size: 24px;
+    position: relative;
+    top: -90px;
+    font-family: sans-serif;
+  }
+
+  .text {
+    margin-left: 90px;
+    position: relative;
+    top: -90px;
+    font-family: sans-serif;
+  }
+
+  .tex {
+    margin-left: 90px;
+    position: relative;
+    top: 45px;
+    font-family: sans-serif;
+  }
+
+  .tex-1 {
+    margin-left: 40px;
+    position: relative;
+    top: 45px;
+    font-family: sans-serif;
+  }
+
+  .tex-2 {
+    margin-left: 40px;
+    position: relative;
+    top: 45px;
+    font-family: sans-serif;
+  }
+
+  .txt {
+    margin-top: 90px;
+    font-family: sans-serif;
+  }
+  
+  .link {
+    margin-left: 140px;
+    top: 25px;
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-size: 21px;
+  }
+  .research{
+    height: 65vh;
+    background-color: var(--blue);
+    color: white;
+    margin-top: 60px;
+ }
+ .research-head{
+     text-align: center;
+     font-family: var(--logo-font-fam);
+ }
+ .research-head h1{
+     position: relative;
+     top: 25px;
+ }
+ .research-head p{
+     position: relative;
+     top: 45px;
+ }
+ .research-articles {
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+ }
+ 
+ .research-card {
+     width: 535px;
+     margin: 20px;
+     padding: 20px;
+     background-color: #fff;
+     border: 1px solid #ddd;
+     border-radius: 8px;
+     text-align: center;
+     position: relative;
+     top: 75px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ }
+ .research-img{
+     margin: 5px auto;
+     height: 200px;
+     width: 350px;
+     object-fit: cover;
+     background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
+     background-position: center;
+     background-size: cover;
+     border-radius: 5px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ }
+ .research-img:hover{
+     transform: scale(1.1);
+     margin-bottom: 15px;
+ }
+ #two{
+     background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
+     background-repeat: no-repeat;
+ }
+ #three{
+     background-image: url(../Images/pexels-daniel-frank-305568.jpg);
+     background-repeat: no-repeat;
+ }
+ .research-card h2 {
+     font-size: 20px;
+     margin-bottom: 15px;
+     color: black;
+     font-family: var(--logo-font-fam);
+ }
+ 
+ .research-card p {
+     font-size: 13px;
+     line-height: 20px;
+     margin-bottom: 15px;
+     color: black;
+     font-family: sans-serif;
+ }
+ 
+ .research-card a {
+     display: inline-block;
+     margin: 10px 0;
+     padding: 7px 17px;
+     background-color: var(--blue);
+     color: white;
+     color: #fff;
+     text-decoration: none;
+     border-radius: 4px;
+     font-size: 13px;
+     font-family: sans-serif;
+ }
+ 
+ .research-card a:hover {
+     background: none;
+     border: 2px solid var(--blue);
+     color: black;
+ }
+ .research-card .video{
+     display: block;
+     background-color: #eee;
+     color: black;
+     padding: 9px;
+     border: 1px solid var(--blue);
+ }
+ .products{
+     height: 125vh;
+ }
+ .products-head{
+     text-align: center;
+     position: relative;
+     top: 25px;
+     font-family: var(--logo-font-fam);
+ }
+ .products-head p{
+     margin-top: 30px;
+ }
+ .product-cards{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     position: relative;
+     top: 45px;
+ }
+ .product-card {
+     margin: 20px;
+     text-align: center;
+     height: 400px;
+     width: 355px;
+     border-radius: 4px;
+     background-color: #eee;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 25px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+ }
+ .product-card .product-img{
+     height: 250px;
+     width: 200px;
+     background-image: url(../Images/pngwing.com\ \(1\).png);
+     background-repeat: no-repeat;
+     object-fit: cover;
+     background-size: cover;
+     background-position: center;
+     margin-bottom: 10px;
+ }
+ .product-card .product-img:hover{
+     transform: scale(1.1);
+ }
+ #img-2{
+     background: url(../Images/pngwing.com\ \(2\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-3{
+     background: url(../Images/pngwing.com\ \(3\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-4{
+     background: url(../Images/pngwing.com\ \(4\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-5{
+     background: url(../Images/pngwing.com\ \(5\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-6{
+     background: url(../Images/pngwing.com\ \(6\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-7{
+     background: url(../Images/pngwing.com\ \(7\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-8{
+     background: url(../Images/pngwing.com\ \(8\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ #img-10{
+     background: url(../Images/pngwing.com\ \(10\).png);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+ 
+ .product-card h2 {
+     margin-top: 10px;
+     font-size: 1.5rem;
+     color: #333;
+     font-family: var(--logo-font-fam);
+ }
+ 
+ .product-card .price {
+     display: block;
+     margin: 10px 0;
+     font-size: 18px;
+     color: #555;
+     font-weight: bold;
+     font-family: sans-serif;
+ }
+ 
+ .product-card a {
+     display: inline-block;
+     padding: 7px 14px;
+     background-color: #183059;
+     color: white;
+     font-family: sans-serif;
+     text-decoration: none;
+     border-radius: 5px;
+     font-size: 15px;
+ }
+ 
+ .product-card a:hover {
+     background-color: #35477d;
+ }
+ .contact-us{
+     height: 100vh;
+     
+ }
+ .contact-us h1{
+     text-align: center;
+     font-family: var(--logo-font-fam);
+ }
