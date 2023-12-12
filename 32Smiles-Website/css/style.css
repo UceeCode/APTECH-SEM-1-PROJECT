@@ -564,7 +564,7 @@ nav .home{
     background-color: #35477d;
 }
 .contact-us{
-    height: 80vh;
+    height: 83vh;
     
 }
 .contact-head{
@@ -578,10 +578,14 @@ nav .home{
 }
 .contacts{
     display: flex;
+    position: relative;
+    top: 35px;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
 }
 .contact-form {
     max-width: 600px;
-    margin: 0 auto;
 }
 
 form {
@@ -593,25 +597,35 @@ form {
 label {
     font-size: 18px;
     margin-top: 10px;
+    font-family: var(--logo-font-fam);
+    align-self: self-start;
+    margin-bottom: 10px;
 }
 
-input,
-textarea {
+input{
     width: 100%;
-    padding: 10px;
+    padding: 14px 145px;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
+textarea{
+    width: 100%;
+    padding: 60px 145px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 button {
-    padding: 10px 20px;
+    padding: 10px 30px;
     background-color: #183059;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    align-self: self-start;
 }
 
 button:hover {
@@ -619,15 +633,9 @@ button:hover {
 }
 
 
-.contact-professionals {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
 .professional-card {
-    width: 300px;
+    height: 50vh;
+    width: 350px;
     padding: 20px;
     margin: 15px;
     background-color: #eee;
@@ -638,19 +646,23 @@ button:hover {
 
 .professional-card h2 {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-family: var(--logo-font-fam);
 }
 
 .professional-card p {
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 13px;
+    margin-bottom: 15px;
     color: #555;
+    font-family: sans-serif;
 }
 
 .location-map {
-    height: 150px;
-    margin-top: 10px;
+    height: 229px;
+    margin-top: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
+}
+@media (min-width: 1024px) {
+    
 }
