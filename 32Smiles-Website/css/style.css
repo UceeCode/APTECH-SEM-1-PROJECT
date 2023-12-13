@@ -3,8 +3,15 @@
     --blue: #183059;
     --font1-color: #F6F4F3;
     --logo-font-fam: "Montserrat", san-serif;
-    --coffee: #43281c;
-    --vanilla: #f1e3d3;
+
+    --base-size: 5px;
+    --scale: 1.28;
+    --h1: calc(var(--h2) * var(--scale)); /* 3.66rem */
+    --h2: calc(var(--h3) * var(--scale)); /* 2.93rem */
+    --h3: calc(var(--h4) * var(--scale)); /* 2.34rem */
+    --h4: calc(var(--h5) * var(--scale)); /* 1.875rem */
+    --h5: calc(var(--h6) * var(--scale)); /* 1.5rem */
+    --h6: var(--base-size); /* 1.2rem */
 }
 
 html {
@@ -29,11 +36,20 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8vh;
+    height: 9vh;
     background-color: var(--blue);
     padding: 15px;
     z-index: 1000;
 }
+header .logo{
+    color: var(--font1-color);
+    font-family: var(--logo-font-fam);
+    font-size: var(--h1);
+    position: relative;
+    left: 15px;
+    cursor: pointer;
+}
+
 
 .logo-img {
   width: 10%;
@@ -46,20 +62,21 @@ header{
   text-decoration: none;
 }
 
-.logo-text {
-  color: #fff;
-  font-family: var(--logo-font-fam);
-  top: 15px;
-  position: relative;
-  left:-1px;
+h1 {
+  font-size: 32px
 }
 
+header .logo {
+    position: relative;
+    right: 4px;
+    font-size: 30px;
+}
 header nav a{
     text-decoration: none;
     color: var(--font1-color);
     font-family: sans-serif;
     margin: 17px;
-    font-size: 19px;
+    font-size: 20px
 }
 header nav a:hover{
     border-bottom: 3px solid white;
@@ -69,77 +86,6 @@ nav .home{
     border-bottom: 3px solid white;
     padding-bottom: 5px;
 }
-.main{
-    height: 80vh;
-    background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
-    background-size: cover;
-    background-position: center;
-    max-width: 100%;
-    animation: changeBackground 50s linear infinite;
-}
-@keyframes changeBackground {
-    10%, 50% {
-        background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
-    }
-    60%, 100% {
-        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
-    }
-}
-
-
-.head{
-    font-family: var(--logo-font-fam);
-    color: var(--font1-color);
-    background-color: var(--blue);
-    width: 24%;
-    position: relative;
-    left: 110px;
-    padding: 3px;
-    border-radius: 5px;
-    top: 230px;
-    font-size: 27px;
-    text-align: center;
-}
-.main-text{
-    position: relative;
-    top: 255px;
-    width: 41%;
-    left: 110px;
-    font-family: sans-serif;
-    line-height: 24px;
-    font-size: 13px;
-    text-align: justify;
-    color: white;
-}
-.main-head{
-    font-size: 65px;
-    line-height: 65px;
-    margin-bottom: 10px;
-}
-.main-text .main-one{
-    margin-bottom: 21px;
-    font-size: 19px;
-    margin-top: 20px;
-    line-height: 33px;
-
-}
-.contact{
-    position: relative;
-    padding: 15px 35px;
-    border: none;
-    background-color: var(--blue);
-    color: var(--font1-color);
-    border-radius: 5px;
-    font-size: 15px;
-    text-transform: uppercase;
-}
-.contact:hover{
-    background: none;
-    border: 2px solid white;
-}
-.contact i{
-    margin-left: 7px;
-}
 .dropdown {
     display: inline-block;
 }
@@ -147,7 +93,7 @@ nav .home{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 220px;
+    min-width: 185px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     padding-bottom: 5px;
@@ -168,6 +114,78 @@ nav .home{
     margin-top: 10px;
     border-radius: 5px;
 }
+.main{
+    height: 90vh;
+    background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    animation: changeBackground 50s linear infinite;
+}
+@keyframes changeBackground {
+    10%, 50% {
+        background-image: url('../Images/pexels-sora-shimazaki-5938300.jpg');
+    }
+    60%, 100% {
+        background-image: url('../Images/olga-guryanova-tMFeatBSS4s-unsplash.jpg');
+    }
+}
+
+
+.head{
+  font-family: var(--logo-font-fam);
+  color: var(--font1-color);
+  background-color: var(--blue);
+  width: 24%;
+  position: relative;
+  left: 110px;
+  padding: 3px;
+  border-radius: 5px;
+  top: 230px;
+  font-size: 27px;
+  text-align: center;
+}
+.main-text{
+  position: relative;
+  top: 255px;
+  width: 41%;
+  left: 110px;
+  font-family: sans-serif;
+  line-height: 24px;
+  font-size: 18px;
+  text-align: justify;
+  color: white;
+}
+.main-head{
+  font-size: 65px;
+  line-height: 65px;
+  margin-bottom: 10px;
+}
+.main-text .main-one{
+  margin-bottom: 21px;
+  font-size: 19px;
+  margin-top: 20px;
+  line-height: 33px;
+
+}
+.contact{
+  position: relative;
+  padding: 15px 35px;
+  border: none;
+  background-color: var(--blue);
+  color: var(--font1-color);
+  border-radius: 5px;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.contact:hover{
+  background: none;
+  border: 2px solid white;
+}
+.contact i{
+  margin-left: 7px;
+}
+
 .professional-edu{
   height: 65vh;
 }
@@ -280,386 +298,588 @@ h3 {
     font-family: sans-serif;
     font-size: 23px;
 }
-
-.Patient-education-text {
-    text-align: center;
-    font-size: 44px;
-    font-weight: 500;
-    margin-top: 500px;
-}
-
-.panels{
-    list-style-type: none;
-    padding: 0;
-}
-
-.panels .texts{
+.student{
     position: relative;
-    margin-top: 50px;
-    width: 25%;
-    display: block;
-    box-sizing: border-box;
-    float: left;
-    
-  }
-  .student{
-    position: relative;
-    top: 40px;
+    top: 210px;
     font-family: sans-serif;
-    left: -15px;
+    margin-left: 45px;
     position: relative; 
 }
 .student h3{
     color: var(--blue);
-    font-size: 39px;
+    font-size: 35px;
     margin-bottom: 15px;
 }
 .student i{
-  margin-right: 10px; 
+    margin-right: 10px; 
 }
-  
+.patient-edu {
+    height: 103vh;
+    padding: 50px 20px;
+    margin-top: 450px;
+}
 
-  h4 {
-    margin-top: 530px;
-    font-family: sans-serif;
-    font-size: 38px;
-    font-weight: 400;
-    margin-left: 800px;
-    border-bottom: 3px solid #183059;
-    width: 16%;
-  }
+.patient-head {
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
 
-  h5 {
-    position: relative;
-    top: -65px;
-  }
+.patient-head h1 {
+    margin-bottom: 15px;
+}
 
-  .scaling-1 {
-    background-color: #183059;
-    width: 25%;
-    height: 25vh;
-    border-radius: 15px;
-    -webkit-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    color: white;
-    padding: 10px;
-  }
-
-  .scaling-2 {
-    background-color: #183059;
-    width: 28%;
-    height: 25vh;
-    margin-left: 30px;
-    border-radius: 15px;
-    -webkit-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    color: white;
-    padding: 10px;
-  }
-
-  .scaling-3 {
-    background-color: #183059;
-    width: 28%;
-    height: 25vh;
-    margin-left: 30px;
-    border-radius: 15px;
-    -webkit-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    box-shadow: -2px 4px 37px -14px rgba(0,0,0,0.75);
-    color: white;
-    padding: 10px;
-  }
-
-
-  .container-1 {
+.patient-content {
     display: flex;
-    margin-top: 40px;
-    margin-left: 250px;
-  }
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
-  h5 {
-    margin-left: 50px;
-    font-size: 24px;
-    position: relative;
-    top: -90px;
-    font-family: sans-serif;
-  }
+.edu-card {
+    height: 40vh;
+    width: 455px;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--blue);
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+}
+.edu-card:hover{
+    transform: scale(1.1);
+}
 
-  .text {
-    margin-left: 90px;
-    position: relative;
-    top: -90px;
-    font-family: sans-serif;
-  }
+.edu-card h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family: var(--logo-font-fam);
+}
 
-  .tex {
-    margin-left: 90px;
-    position: relative;
-    top: 45px;
+.edu-card p {
+    font-size: 19px;
     font-family: sans-serif;
-  }
+    margin-bottom: 30px;
+    line-height: 25px;
+}
 
-  .tex-1 {
-    margin-left: 40px;
-    position: relative;
-    top: 45px;
-    font-family: sans-serif;
-  }
-
-  .tex-2 {
-    margin-left: 40px;
-    position: relative;
-    top: 45px;
-    font-family: sans-serif;
-  }
-
-  .txt {
-    margin-top: 90px;
-    font-family: sans-serif;
-  }
-  
-  .link {
-    margin-left: 140px;
-    top: 25px;
-    position: relative;
-    background-color: #fff;
+.edu-card a {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: white;
+    color: var(--blue);
     text-decoration: none;
-    padding: 10px;
+    font-family: sans-serif;
     border-radius: 5px;
+    font-size: 14px;
+}
+
+.edu-card a:hover {
+    background: none;
+    color: white;
+    border: 2px solid white;
+}
+.research{
+   height: 65vh;
+   background-color: var(--blue);
+   color: white;
+}
+.research-head{
+    text-align: center;
+    font-family: var(--logo-font-fam);
+}
+.research-head h1{
+    position: relative;
+    top: 25px;
+}
+.research-head p{
+    position: relative;
+    top: 45px;
+}
+.research-articles {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.research-card {
+    width: 445px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    top: 75px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.research-img{
+    margin: 5px auto;
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.research-img:hover{
+    transform: scale(1.1);
+    margin-bottom: 20px;
+}
+#two{
+    background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
+}
+#three{
+    background-image: url(../Images/pexels-daniel-frank-305568.jpg);
+}
+.research-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
     color: black;
-    font-size: 21px;
-  }
-  .research{
-    height: 65vh;
+    font-family: var(--logo-font-fam);
+}
+
+.research-card p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-family: sans-serif;
+}
+
+.research-card a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 7px 17px;
     background-color: var(--blue);
     color: white;
-    margin-top: 60px;
- }
- .research-head{
-     text-align: center;
-     font-family: var(--logo-font-fam);
- }
- .research-head h1{
-     position: relative;
-     top: 25px;
- }
- .research-head p{
-     position: relative;
-     top: 45px;
- }
- .research-articles {
-     display: flex;
-     justify-content: space-around;
-     flex-wrap: wrap;
- }
- 
- .research-card {
-     width: 535px;
-     margin: 20px;
-     padding: 20px;
-     background-color: #fff;
-     border: 1px solid #ddd;
-     border-radius: 8px;
-     text-align: center;
-     position: relative;
-     top: 75px;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- }
- .research-img{
-     margin: 5px auto;
-     height: 200px;
-     width: 350px;
-     object-fit: cover;
-     background-image: url(../Images/pexels-anna-shvets-3845766.jpg);
-     background-position: center;
-     background-size: cover;
-     border-radius: 5px;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- }
- .research-img:hover{
-     transform: scale(1.1);
-     margin-bottom: 15px;
- }
- #two{
-     background-image: url(../Images/pexels-cottonbro-studio-6529115.jpg);
-     background-repeat: no-repeat;
- }
- #three{
-     background-image: url(../Images/pexels-daniel-frank-305568.jpg);
-     background-repeat: no-repeat;
- }
- .research-card h2 {
-     font-size: 20px;
-     margin-bottom: 15px;
-     color: black;
-     font-family: var(--logo-font-fam);
- }
- 
- .research-card p {
-     font-size: 13px;
-     line-height: 20px;
-     margin-bottom: 15px;
-     color: black;
-     font-family: sans-serif;
- }
- 
- .research-card a {
-     display: inline-block;
-     margin: 10px 0;
-     padding: 7px 17px;
-     background-color: var(--blue);
-     color: white;
-     color: #fff;
-     text-decoration: none;
-     border-radius: 4px;
-     font-size: 13px;
-     font-family: sans-serif;
- }
- 
- .research-card a:hover {
-     background: none;
-     border: 2px solid var(--blue);
-     color: black;
- }
- .research-card .video{
-     display: block;
-     background-color: #eee;
-     color: black;
-     padding: 9px;
-     border: 1px solid var(--blue);
- }
- .products{
-     height: 125vh;
- }
- .products-head{
-     text-align: center;
-     position: relative;
-     top: 25px;
-     font-family: var(--logo-font-fam);
- }
- .products-head p{
-     margin-top: 30px;
- }
- .product-cards{
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-around;
-     position: relative;
-     top: 45px;
- }
- .product-card {
-     margin: 20px;
-     text-align: center;
-     height: 400px;
-     width: 355px;
-     border-radius: 4px;
-     background-color: #eee;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
-     padding: 25px;
-     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
- }
- .product-card .product-img{
-     height: 250px;
-     width: 200px;
-     background-image: url(../Images/pngwing.com\ \(1\).png);
-     background-repeat: no-repeat;
-     object-fit: cover;
-     background-size: cover;
-     background-position: center;
-     margin-bottom: 10px;
- }
- .product-card .product-img:hover{
-     transform: scale(1.1);
- }
- #img-2{
-     background: url(../Images/pngwing.com\ \(2\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-3{
-     background: url(../Images/pngwing.com\ \(3\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-4{
-     background: url(../Images/pngwing.com\ \(4\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-5{
-     background: url(../Images/pngwing.com\ \(5\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-6{
-     background: url(../Images/pngwing.com\ \(6\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-7{
-     background: url(../Images/pngwing.com\ \(7\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-8{
-     background: url(../Images/pngwing.com\ \(8\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- #img-10{
-     background: url(../Images/pngwing.com\ \(10\).png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
- }
- 
- .product-card h2 {
-     margin-top: 10px;
-     font-size: 1.5rem;
-     color: #333;
-     font-family: var(--logo-font-fam);
- }
- 
- .product-card .price {
-     display: block;
-     margin: 10px 0;
-     font-size: 18px;
-     color: #555;
-     font-weight: bold;
-     font-family: sans-serif;
- }
- 
- .product-card a {
-     display: inline-block;
-     padding: 7px 14px;
-     background-color: #183059;
-     color: white;
-     font-family: sans-serif;
-     text-decoration: none;
-     border-radius: 5px;
-     font-size: 15px;
- }
- 
- .product-card a:hover {
-     background-color: #35477d;
- }
- .contact-us{
-     height: 100vh;
-     
- }
- .contact-us h1{
-     text-align: center;
-     font-family: var(--logo-font-fam);
- }
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.research-card a:hover {
+    background: none;
+    border: 2px solid var(--blue);
+    color: black;
+}
+.research-card .video{
+    display: block;
+    background-color: #eee;
+    color: black;
+    padding: 9px;
+    border: 1px solid var(--blue);
+}
+.products{
+    height: 150vh;
+}
+.products-head{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-family: var(--logo-font-fam);
+}
+.products-head p{
+    margin-top: 30px;
+}
+.product-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    top: 45px;
+}
+.product-card {
+    margin: 20px;
+    text-align: center;
+    height: 400px;
+    width: 455px;
+    border-radius: 4px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 25px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+.product-card .product-img{
+    height: 250px;
+    width: 200px;
+    background-image: url(../Images/pngwing.com\ \(1\).png);
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+.product-card .product-img:hover{
+    transform: scale(1.1);
+}
+#img-2{
+    background: url(../Images/pngwing.com\ \(2\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-3{
+    background: url(../Images/pngwing.com\ \(3\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-4{
+    background: url(../Images/pngwing.com\ \(4\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-5{
+    background: url(../Images/pngwing.com\ \(5\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-6{
+    background: url(../Images/pngwing.com\ \(6\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-7{
+    background: url(../Images/pngwing.com\ \(7\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-8{
+    background: url(../Images/pngwing.com\ \(8\).png);
+    background-position: center;
+    background-size: cover;
+}
+#img-10{
+    background: url(../Images/pngwing.com\ \(10\).png);
+    background-position: center;
+    background-size: cover;
+}
+
+.product-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    font-family: var(--logo-font-fam);
+}
+
+.product-card .price {
+    display: block;
+    margin: 10px 0;
+    font-size: 27px;
+    color: #555;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.product-card a {
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #183059;
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.product-card a:hover {
+    background-color: #35477d;
+}
+.contact-us{
+    height: 83vh;
+    
+}
+.contact-head{
+    text-align: center;
+    position: relative;
+    top: 25px;
+    font-family: var(--logo-font-fam);
+}
+.contact-head p{
+    margin-top: 30px;
+}
+.contacts{
+    display: flex;
+    position: relative;
+    top: 35px;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+}
+.contact-form {
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 24px;
+    margin-top: 10px;
+    font-family: var(--logo-font-fam);
+    align-self: self-start;
+    margin-bottom: 10px;
+}
+
+input{
+    width: 100%;
+    padding: 14px 145px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+textarea{
+    width: 100%;
+    padding: 60px 145px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 30px;
+    background-color: #183059;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: self-start;
+}
+
+button:hover {
+    background-color: #35477d;
+}
+
+
+.submit {
+  padding: 10px 30px;
+  background-color: #183059;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  align-self: self-start;
+}
+
+.submit:hover {
+  background-color: #35477d;
+}
+
+
+
+.professional-card {
+    height: 40vh;
+    width: 350px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #eee;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.professional-card h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: var(--logo-font-fam);
+}
+
+.professional-card p {
+    font-size: 13px;
+    margin-bottom: 15px;
+    color: #555;
+    font-family: sans-serif;
+}
+
+.location-map {
+    height: 229px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+@media (max-width: 1024px) {
+
+  h1 {
+    font-size: 29px;
+    position: relative;
+    left: -23px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .linkss {
+    font-size: 15px;
+    left: -10px;
+    position: relative;
+  }
+
+  .head {
+    font-size: 17px;
+    width: 35%;
+    position: relative;
+    left: 40px;
+    top: 270px;
+  }
+
+  .main-head {
+    width: 150%;
+    font-size: 55px;
+    position: relative;
+    left: -70px;
+    bottom: -50px;
+  }
+
+  .main-text .main-one {
+    font-size: 15px;
+    width: 140%;
+    top: 35px;
+    left: -70px;
+    position: relative;
+    line-height: 24px;
+  }
+
+  .contact {
+    top: 35px;
+    left: -70px;
+    position: relative;
+  }
+
+  .main {
+    height: 80vh;
+  }
+
+  .contact {
+    padding: 12px;
+  }
+
+  .logo {
+    margin-left: 30px
+  }
+
+  .courses h3 {
+    font-size: 29px;
+    position: relative;
+    left: -40px;
+    top: -29px;
+  }
+
+  p {
+    position: relative;
+    bottom: 20px;
+  }
+
+  .one {
+    margin-left: 70px;
+    padding: 2px;
+    position: relative;
+    bottom: 20px;
+  }
+
+
+  .help h3 {
+    font-size: 29px;
+    position: relative;
+    left: -40px;
+    top: -29px;
+  }
+
+  .help-box {
+    font-size: 16px;
+    position: relative;
+    left: -40px;
+    top: -19px;
+  }
+
+  .faculty h3 {
+    font-size: 29px;
+    position: relative;
+    left: -40px;
+    top: -29px;
+  }
+
+  .student h3 {
+    font-size: 29px;
+    position: relative;
+    left: -40px;
+    top: -29px;
+  }
+
+  .edu-card {
+    width: 32%;
+    margin: 20px auto;
+  }
+
+  .edu-card h2 {
+    font-size: 21px;
+  }
+
+  .edu-card p {
+    font-size: 14px;
+  }
+
+  .edu-card a {
+    position: relative;
+    bottom: 20px;
+  }
+
+  .research {
+    height: 75vh;
+  }
+
+  #third {
+    display: none;
+  }
+
+  .research-card h2 {
+    margin-top: 30px;
+  }
+
+  .research-card p {
+    top: -5px;
+    position: relative;
+  }
+
+  .research-card a {
+    font-size: 17px;
+  }
+
+  .product-card {
+    width: 29%;
+    margin: 10 auto;
+  }
+
+  .contact-us {
+    margin-top: 160px;
+  }
+
+  .professional-card {
+    padding: 20px;
+    height: 45vh;
+  }
+
+  .professional-card p {
+    margin-top: 30px;
+  }
+
+  .professional-card #phone {
+    position: relative;
+    bottom: 35px;
+  }
+
+}
