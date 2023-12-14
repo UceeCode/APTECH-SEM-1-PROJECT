@@ -97,6 +97,12 @@ nav .home{
     margin-top: 10px;
     border-radius: 5px;
 }
+.fa-bars{
+    font-size: 35px;
+    color: white;
+    position: relative;
+    right: 25px;
+}
 .main{
     height: 100vh;
     background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
@@ -578,6 +584,7 @@ nav .home{
 }
 .contacts{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
     top: 35px;
     align-items: center;
@@ -629,7 +636,9 @@ button {
 }
 
 button:hover {
-    background-color: #35477d;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
 }
 
 
@@ -663,6 +672,90 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-@media (min-width: 1024px) {
-    
+.footer{
+    height: 50vh;
+    background-color: #183059;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    header .logo{
+        font-size: smaller;
+    }
+    header nav a{
+        font-size: small;
+    }
+    .main .head{
+        width: 30%;
+    }
+    .main-head{
+        width: 150%;
+    }
+    .main-one{
+        font-size: small;
+        width: 130%;
+    }
+    .professional-edu{
+        height: 147vh;
+    }
+    .prof-head{
+        font-size: smaller;
+    }
+    .course-box{
+        margin-left: 45px;
+    }
+    .course-box .one{
+        font-size: smaller;
+    }
+    .patient-head{
+        font-size: smaller;
+    }
+    .edu-card{
+        height: 38vh;
+        width: 278px;
+    }
+    .research{
+        height: 95vh;
+    }
+    .research-head{
+        font-size: smaller;
+    }
+    #research-card3{
+        display: none;
+    }
+    .products-head{
+        font-size: smaller;
+    }
+    .product-card{
+        height: 350px;
+        width: 300px;
+    }
+    .contact-us{
+        height: 95vh;
+    }
+    .contact-head{
+        font-size: smaller;
+    }
+    .contacts{
+        position: relative;
+        top: 55px;
+    }
+    .professional-card{
+        height: 55vh;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo{
+        width: 25%;
+        font-size: small;
+    }
+    header .logo .fa-tooth{
+        font-size: larger;
+    }
+    nav a{
+        display: none;
+    }
 }
