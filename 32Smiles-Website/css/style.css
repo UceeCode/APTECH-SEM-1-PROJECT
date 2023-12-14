@@ -784,4 +784,99 @@ button:hover {
     .display i{
         display: block;
     }
+    .head{
+        margin-left: 151px;
+    }
+    .main-head{
+        text-align: center;
+        width: 200%;
+        padding-right: 55px;
+    }
+    .main-one{
+        text-align: center;
+        width: 200%;
+        padding-right: 40px;
+    }
+    .main .contact{
+      margin-left: 182px;
+      width: 55%;
+    }
+    .prof-head{
+        font-size: x-small;
+    }
+    .course-box{
+        margin-left: 70px;
+    }
+    .course-box .one{
+        height: 40px;
+        width: 150px;
+    }
+    .prof-info h3{
+        font-size: large;
+    }
+    .prof-info p{
+        font-size: small;
+    }
+    .help-box a, .faculty a, .student a{
+        font-size: smaller;
+    }
+    .patient-edu{
+        padding: 10px;
+        height: 127vh;
+    }
+    .patient-head{
+        font-size: x-small;
+    }
+    .edu-card{
+        height: 33vh;
+        width: 321px;
+    }
+    .edu-card h2{
+        font-size: medium;
+    }
+    .edu-card p{
+        font-size: small;
+    }
+    .research-head{
+        font-size: x-small;
+    }
+    .research-card{
+        width: 325px;
+    }
+    .research-img{
+        width: 230px;
+    }
+    .products{
+        height: 203vh;
+    }
+    .products-head{
+        font-size: x-small;
+    }
+    .product-card{
+        height: 280px;
+        width: 335px;
+    }
+    .product-card h2{
+        font-size: 21px;
+    }
+    .product-card .price{
+        font-size: medium;
+    }
+    .product-card a{
+        padding: 5px 10px;
+        font-size: small;
+    }
+    .product-card .product-img{
+        height: 120px;
+        width: 120px;
+    }
+    #last-card{
+        display: none;
+    }
+    .contact-head{
+        font-size: small;
+    }
+    .contact-professionals{
+        display: none;
+    }
 }
