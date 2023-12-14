@@ -18,3 +18,16 @@ function initMap() {
         });
     });
 }
+
+let nav = document.querySelector('nav');
+let togbtn = document.getElementById('tog-btn');
+
+togbtn.addEventListener('click', function(){
+    if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+        togbtn.innerHTML = '<i class="fa-solid fa-bars"></i>'
+    } else {
+        nav.style.display = 'flex';
+        togbtn.innerHTML = '<i class="fa-solid fa-x"></i>'
+    }
+})

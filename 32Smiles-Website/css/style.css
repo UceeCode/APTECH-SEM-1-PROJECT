@@ -58,8 +58,8 @@ header nav a{
     text-decoration: none;
     color: var(--font1-color);
     font-family: sans-serif;
-    margin: 17px;
-    font-size: 14px
+    margin: 20px;
+    font-size: 14px;    
 }
 header nav a:hover{
     border-bottom: 3px solid white;
@@ -102,7 +102,9 @@ nav .home{
     color: white;
     position: relative;
     right: 25px;
+    display: none;
 }
+
 .main{
     height: 100vh;
     background-image: url(../Images/pexels-sora-shimazaki-5938300.jpg);
@@ -755,7 +757,31 @@ button:hover {
     header .logo .fa-tooth{
         font-size: larger;
     }
-    nav a{
+    .fa-x{
+        font-size: 27px;
+        color: white;
+        position: relative;
+        right: 25px;
+        display: block;
+    }
+    header nav{
         display: none;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: #183059;
+        color: white;
+        width: 35%;
+        position: relative;
+        top: 211px;
+        padding: 15px;
+        left: 176px;
+        border-bottom-left-radius: 8px;
+    }
+    nav a{
+        display: block;
+    }
+    .display i{
+        display: block;
     }
 }
