@@ -678,10 +678,67 @@ button:hover {
     height: 50vh;
     background-color: #183059;
 }
+/* 
+@media (min-device-width: 1024px) and (max-device-width: 1366px) {
+   
+    header{
+        height: 7vh;
+    }
+    .main{
+        height: 50vh;
+    }
+    #prof{
+       height: 75vh;
+    }
+    #patient{
+        height: 55vh;
+    }
+    #educard{
+        height: 20vh;
+    }
+    #research{
+        height: 50vh;
+    }
+    #products{
+        height: 95vh;
+    }
+    #prof-card{
+        height: 30vh;
+    }
+    #contact{
+        height: 50vh;
+    }
+    .footer{
+        height: 24vh;
+    }
+}
 
-
-
-
+@media (min-device-width: 768px) and (max-device-width: 1024px){
+    .main{
+        height: 65vh;
+    }
+    #prof{
+        height: 100vh;
+    }
+    #educard{
+        height: 22vh;
+    }
+    #patient{
+        height: 84vh;
+    }
+    #research{
+        height: 65vh;
+    }
+    #products{
+        height: 138vh;
+    }
+    #contact{
+        height: 67vh;
+    }
+    .footer{
+        height: 24vh;
+    }
+} */
 @media (max-width: 1024px) {
     header .logo{
         font-size: smaller;
@@ -775,7 +832,7 @@ button:hover {
         position: relative;
         top: 211px;
         padding: 15px;
-        left: 176px;
+        left: 173px;
         border-bottom-left-radius: 8px;
     }
     nav a{
@@ -879,4 +936,85 @@ button:hover {
     .contact-professionals{
         display: none;
     }
+}
+
+
+@media (max-width: 576px) {
+
+  header nav{
+    left: 96px;
+    width: 45%;
+  }
+  header .logo{
+    width: 29%;
+    font-size: small;
+  }
+  .main{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  #head{
+    width: 45%;
+    padding: 5px 10px;
+    margin-left: 68px;
+  }
+  .main-head{
+    width: 220%;
+    font-size: 40px;
+    position: relative;
+    right: 40px;
+  }
+  .main-one{
+    font-size: 12px;
+    width: 205%;
+    position: relative;
+    right: 25px;
+  }
+  #con-btn{
+    font-size: 11px;
+    width: 65%;
+    right: 60px;
+  }
+  .course-box{
+    left: -70px;
+    gap: 40px;
+  }
+  .one ul a {
+    font-size: 11px;
+  }
+  .help a, .faculty a, .student a{
+    font-size: 11px;
+  }
+  .patient-edu {
+    height: 250vh;
+    padding: 50px 40px;
+  }
+  #educard{
+    width: 445px;
+ }
+ #research-card2{
+    display: none;
+ }
+ .research-card{
+    width: 415px;
+ }
+ .research-img{
+    width: 350px;
+    margin-bottom: 10px;
+ } 
+ .products{
+    height: 388vh;
+ }
+ .product-card{
+    width: 450px;
+ }
+ .contact-us{
+    padding: 0 55px;
+ }
+ .contact-head{
+    font-size: x-small;
+ }
+ form label{
+    font-size: 14px;
+ }
 }
