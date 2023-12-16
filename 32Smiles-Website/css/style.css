@@ -679,70 +679,103 @@ button:hover {
     border-radius: 5px;
 }
 .footer{
-    height: 50vh;
+    height: auto;
     background-color: #183059;
+    margin-top: 45px;
 }
-/* 
-@media (min-device-width: 1024px) and (max-device-width: 1366px) {
-   
-    header{
-        height: 7vh;
-    }
-    .main{
-        height: 50vh;
-    }
-    #prof{
-       height: 75vh;
-    }
-    #patient{
-        height: 55vh;
-    }
-    #educard{
-        height: 20vh;
-    }
-    #research{
-        height: 50vh;
-    }
-    #products{
-        height: 95vh;
-    }
-    #prof-card{
-        height: 30vh;
-    }
-    #contact{
-        height: 50vh;
-    }
-    .footer{
-        height: 24vh;
-    }
+.footer .box-cont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap:15px;
 }
 
-@media (min-device-width: 768px) and (max-device-width: 1024px){
-    .main{
-        height: 65vh;
-    }
-    #prof{
-        height: 100vh;
-    }
-    #educard{
-        height: 22vh;
-    }
-    #patient{
-        height: 84vh;
-    }
-    #research{
-        height: 65vh;
-    }
-    #products{
-        height: 138vh;
-    }
-    #contact{
-        height: 67vh;
-    }
-    .footer{
-        height: 24vh;
-    }
-} */
+.bor h3{
+    font-size: 25px;
+    color: white;
+    padding: 20px 15px;
+    font-family: var(--logo-font-fam);
+}
+
+.bor h3 i{
+    color: white;
+}
+
+.links{
+    display: block;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    padding:10px 15px;
+    text-decoration: none;
+}
+
+.links i{
+    color: white;
+    padding-right: 2px;
+}
+
+.links:hover i{
+    padding-right: 10px;
+    transition: .4s;
+}
+
+
+.bor p{
+    line-height: 1.8;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    padding:0 15px;
+}
+
+.bor .share a{
+    height:30px;
+    width:30px;
+    line-height:20px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #183059;
+    margin-left: 15px;
+    margin-top: 10px;
+    padding: 5px;
+    background: #eee;
+    text-align: center;
+}
+
+.bor .share a:hover{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+.bor .email{
+    width: 50%;
+    margin: 20px 0;
+    padding:8px 13px;
+    border-radius: 5px;
+    margin-left: 13px;
+    background: white;
+    font-size: 15px;
+    color: black;
+    border: none;
+    text-transform: none;
+}
+.bor button{
+    background-color: white;
+    color: #183059;
+    position: relative;
+    left: 12px;
+    font-size: 15px;
+    padding: 5px 15px;
+    margin-bottom:10px;
+}
+.bor button:hover{
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
 @media (max-width: 1024px) {
     header .logo{
         font-size: smaller;
