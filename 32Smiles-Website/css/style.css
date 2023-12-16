@@ -1018,3 +1018,110 @@ button:hover {
     font-size: 14px;
  }
 }
+@media (max-width: 520px){
+   header .logo {
+    font-size: 12px;
+    width: 45%;
+   }
+   #tog-btn i{
+    font-size: 27px;
+   }
+   header nav{
+    left: 39px;
+    width: 55%;
+   }
+   .main #head{
+    width: 60%;
+    left: 40px;
+   }
+   .main .main-head{
+    width: 260%;
+    right: 98px;
+   }
+   .main-one{
+    width: 220%;
+    right: 57px;
+   }
+   #con-btn{
+    font-size: 10px;
+    width: 72%;
+    right: 109px;
+    }
+    .course-box ul a{
+        position: relative;
+        left: 4px;
+    }
+   
+}
+@media (max-width: 414px){
+    header .logo{
+        font-size: 12px;
+        width: 38%;
+    }
+    #tog-btn i{
+        font-size: 27px;
+    }
+    header nav{
+        left: 39px;
+        width: 55%;
+    }
+    #head{
+        width: 65%;
+        padding: 5px 10px;
+        margin-left: 40px;
+        font-size: small;
+    }
+    .main{
+        padding: 0 15px;
+    }
+    .main-head{
+        width: 365%;
+        right: 115px;
+        font-size: 32px;
+    }
+    #m-head{
+        width: 270%;
+    }
+    .main-one{
+        width: 265%;
+        right: 98px;
+    }
+    #con-btn{
+        font-size: 11px;
+        width: 99%;
+        right: 169px;
+    }
+    .professional-edu{
+        height: 170vh;
+    }
+    .prof-head{
+        padding: 0px 10px;
+    }
+    .course-box{
+        font-size: 11px;
+        width: 100%;
+        gap: 5px;
+        
+    }
+    .course-box .one{
+        width: 105px;
+        position: relative;
+        right: 9px;
+    }
+    .course-box ul a{
+        position: relative;
+        left: 3px;
+    }
+    .help a, .faculty a, .student a{
+        width: 70%;
+    }
+    #educard{
+        width: 495px;
+    }
+    .research-card{
+        width: 370px;
+    }
+    .research-img{
+        width: 330px;
+    }
+}
