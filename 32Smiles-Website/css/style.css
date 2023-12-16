@@ -741,6 +741,7 @@ button:hover {
     padding: 5px;
     background: #eee;
     text-align: center;
+    text-decoration: none;
 }
 
 .bor .share a:hover{
