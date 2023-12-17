@@ -49,6 +49,11 @@ header .logo{
     left: 15px;
     cursor: pointer;
 }
+
+.logo a {
+  text-decoration: none;
+  color: white;
+}
 header .logo .fa-tooth{
     position: relative;
     right: 4px;
@@ -91,7 +96,7 @@ nav .home{
     padding: 6px 25px;
     border-radius: 4px;
 }
-.dropdown:hover .dropdown-content {
+.dropdown:hover  .dropdown-content{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
@@ -503,7 +508,7 @@ h3 {
 }
 .product-card .product-img{
     height: 250px;
-    width: 100px;
+    width: 50%;
     background-image: url(../Images/pngwing.com\ \(1\).png);
     object-fit: cover;
     background-size: cover;
@@ -701,6 +706,196 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
+.footer{
+  height: auto;
+  background-color: #183059;
+  margin-top: 45px;
+}
+
+.footer .box-cont{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap:5px;
+}
+
+.bor h3{
+  font-size: 30px;
+  color: white;
+  padding:20px 15px;
+  font-family: var(--logo-font-fam);
+  left: -45px;
+  position: relative;
+}
+
+.bor h3 i{
+  color: white;
+}
+
+.links{
+  display: block;
+  font-size: 16px;
+  font-family: var(--logo-font-fam);
+  color: white;
+  padding:10px 15px;
+}
+.links i{
+  color: white;
+  padding-right: 2px;
+}
+.links:hover i{
+  padding-right: 10px;
+  transition: .4s;
+}
+.bor p{
+  line-height: 1.8;
+  font-size: 18px;
+  font-family: var(--logo-font-fam);
+  color: white;
+  font-weight: bold;
+  padding:0 15px;
+}
+
+.bor .share a{
+  height:30px;
+  width:30px;
+  line-height:20px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #183059;
+  margin-left: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  background: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.bor a{
+  text-decoration: none;
+}
+
+
+.bor .email{
+  width: 50%;
+  margin: 20px 0;
+  padding:15px 13px;
+  border-radius: 10px;
+  margin-left: 10px;
+  background: white;
+  font-size: 15px;
+  color: black;
+  border: none;
+  text-transform: none;
+}
+.bor .btn{
+  padding: 10px 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: var(--logo-font-fam);
+  color: black;
+  width: 20%;
+}
+.btn:hover{
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+
+@media (max-width: 1310px) {
+  
+  .head {
+    font-size: 17px;
+    width: 25%;
+    position: relative;
+    left: 40px;
+    top: 270px;
+  }
+
+  .main-head {
+    width: 120%;
+    font-size: 55px;
+    position: relative;
+    left: -70px;
+    bottom: -50px;
+  }
+
+  .main-text .main-one {
+    font-size: 15px;
+    width: 140%;
+    top: 35px;
+    left: -70px;
+    position: relative;
+    line-height: 24px;
+  }
+
+  .contact {
+    top: 35px;
+    left: -70px;
+    position: relative;
+  }
+
+  .patient-edu {
+    margin-top: 590px;
+  }
+
+  .help p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .courses h3 {
+    right: 40px;
+    position: relative;
+  }
+
+  .help h3 {
+    right: 40px;
+    position: relative;
+  }
+
+  .faculty h3 {
+    right: 40px;
+    position: relative;
+  }
+
+  .student h3 {
+    right: 40px;
+    position: relative;
+  }
+
+  .research {
+    margin-top: 430px;
+    height: 85vh;
+  }
+
+ #third {
+    display: none;
+  }
+
+  .braces {
+    display: none;
+  }
+
+  .product-card .product-img {
+    width: 55%;
+  }
+
+  .contact-us {
+    margin-top: 750px;
+  }
+
+  .footer {
+    margin-top: 290px;
+  }
+} 
+
+
+
 @media (max-width: 1024px) {
 
   h1 {
@@ -742,6 +937,10 @@ button:hover {
     left: -70px;
     position: relative;
     line-height: 24px;
+  }
+
+  .main {
+    height: 90%;
   }
 
   .contact {
@@ -854,8 +1053,60 @@ button:hover {
     margin: 10 auto;
   }
 
+  .product-card .product-img {
+    width: 205px;
+    margin-top: 30px;
+  }
+
+  .text-1 {
+    position: relative;
+    top: -23px;
+  }
+
+  .text-2 {
+    position: relative;
+    top: -15px;
+  }
+
+
+  .text-3 {
+    position: relative;
+    top: -25px;
+  }
+
+  .text-4 {
+    position: relative;
+    top: -17px;
+  }
+
+  .read {
+    position: relative;
+    top: -10px;
+  }
+
+  .read-2 {
+    position: relative;
+    top: 5px;
+  }
+
+  .patient-head {
+    margin-top: 70px;
+  }
+
+  .research-head {
+    margin-top: 120px;
+  }
+
+  .research {
+    height: 99vh;
+  }
+
+  .products-head {
+    margin-top: 70px;
+  }
+
   .contact-us {
-    margin-top: 160px;
+    margin-top: 260px;
   }
 
   .professional-card {
@@ -873,6 +1124,8 @@ button:hover {
   }
 
 }
+
+
 
 @media (max-width: 768px){
   header .logo{
@@ -1041,13 +1294,14 @@ button:hover {
 
   .research {
     height: 80vh;
-    margin-top: 190px;
+    margin-top: 250px;
   }
 
   .research-card {
     width: 43%;
     padding: 7px;
   }
+
   .product-card {
     width: 40%;
   }
@@ -1083,6 +1337,37 @@ button:hover {
 
   .contact-head p {
       font-size: 15px;
+  }
+
+  .text-1 {
+    position: relative;
+    top: -23px;
+  }
+
+  .text-2 {
+    position: relative;
+    top: -15px;
+  }
+
+
+  .text-3 {
+    position: relative;
+    top: 5px;
+  }
+
+  .text-4 {
+    position: relative;
+    top: -17px;
+  }
+
+  .read {
+    position: relative;
+    top: -10px;
+  }
+
+  .read-2 {
+    position: relative;
+    top: -10px;
   }
 }
 
@@ -1205,5 +1490,530 @@ button:hover {
     position: relative;
     left: -110px;
   }
+
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 21px;
+  }
+
+  header .logo{
+    width: 25%;
+    font-size: small;
+  }
+  header .logo .fa-tooth{
+      font-size: larger;
+  }
+  .x-logo{
+      font-size: 31px;
+      color: white;
+      position: relative;
+      right: 25px;
+      display: block;
+  }
+
+  header nav{
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: #183059;
+      color: white;
+      width: 55%;
+      position: relative;
+      top: 211px;
+      padding: 15px;
+      left: 120px;
+      border-bottom-left-radius: 8px;
+  }
+  nav a{
+      display: block;
+  }
+
+  .linkss {
+    font-size: 15px;
+  }
+  .display i{
+      display: block;
+  }
+  .head{
+      margin-left: 211px;
+  }
+
+  .dropdown-content a {
+    font-size: 14px;
+  }
+
+  .contact {
+    margin-left: 192px;
+    width: 70%;
+  }
+
+  .course-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .course-box .one {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .course-box .one ul {
+    padding-left: 10px;
+  }
+  
+  .course-box .one a {
+    font-size: 14px;
+    display: block;
+    max-width: 100%; 
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+  }
+  
+  
+  .course-box .dentals {
+    left: -22px;
+    position: relative;
+    padding: 12px;
+    width: 729px;
+  }
+  
+  .course-box .orals {
+    left: 25px;
+    position: relative;
+    padding: 12px;
+  }
+  
+  .course-box .anatomy {
+    left: 72px;
+    position: relative;
+    padding: 12px;
+  }
+
+  .courses h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+.courses p {
+  font-size: 12px;
+  left: -20px;
+}
+
+  .help {
+    top: 110px;
+    position: relative;
+  }
+
+  .help p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .help h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+  .help-box a {
+    font-size: 13px;
+  }
+
+  .faculty {
+    top: 140px;
+    position: relative;
+  }
+
+  .faculty p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .faculty h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+  .student {
+    position: relative;
+    top:180px;
+  }
+
+  .student p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .student h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+  .patient-head {
+    margin-top: 70px;
+  }
+
+  .patient-head h1 {
+    font-size: 23px;
+    margin-left: 40px;
+  }
+
+  .research {
+    top: 10px;
+    position: relative;
+    height: 85vh;
+  }
+
+  .research h1 {
+    font-size: 23px;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .research-card {
+    height: 58vh;
+    width: 80%;
+  }
+
+  .products-head h1 {
+    font-size: 23px;
+    margin-left: 40px;
+  }
+
+  .products {
+    top: 20px;
+    position: relative;
+  }
+
+  .product-card .purchase {
+    font-size: 17px;
+  }
+
+  .contact-us{
+    top: 210px;
+    position: relative;
+  }
+
+  .contact-head h1 {
+    font-size: 23px;
+    margin-left: 40px;
+  }
+
+  .footer {
+    margin-top: 240px;
+  }
+
+}
+
+@media (max-width: 414px){
+  h1 {
+    font-size: 16px;
+  }
+
+  header nav {
+    left: 46px;
+    width: 55%;
+  }
+
+  .head {
+    width: 60%;
+    left: -120px;
+    top: 270px;
+  }
+
+  .main-head {
+    font-size: 34px;
+    width: 265%;
+    left: -130px;
+  }
+
+.main-text .main-one {
+    left: -90px;
+    position: relative;
+    font-size: 10px;
+  }
+
+  .contact {
+    font-size: 11px;
+    margin-left: 150px;
+  }
+
+
+  .courses h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+.courses p {
+  font-size: 12px;
+  left: -20px;
+}
+
+
+.course-box {
+  width: 90%;
+  margin: 0 auto;
+}
+.course-box .one {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.course-box .one ul {
+  padding-left: 10px;
+}
+
+.course-box .one a {
+  font-size: 14px;
+  display: block;
+  max-width: 100%; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+}
+
+
+.course-box .dentals {
+  left: -22px;
+  position: relative;
+  padding: 12px;
+  width: 729px;
+}
+
+.course-box .orals {
+  left: 45px;
+  position: relative;
+  padding: 12px;
+}
+
+.course-box .anatomy {
+  left: 112px;
+  position: relative;
+  padding: 12px;
+}
+
+  .help p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .help h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+  .help-box a {
+    font-size: 13px;
+  }
+
+  .faculty p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .faculty h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+  .student p {
+    font-size: 12px;
+    left: -20px;
+  }
+
+  .student h3 {
+    font-size: 19px;
+    left: -70px;
+  }
+
+  .patient-head {
+    margin-top: 180px;
+  }
+
+  .patient-head h1 {
+    font-size: 23px;
+    margin-left: 40px;
+  }
+
+  .research {
+    top: 110px;
+    position: relative;
+  }
+
+  .research h1 {
+    font-size: 23px;
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  .research-card {
+    height: 55vh;
+    width: 80%;
+  }
+
+  .products-head h1 {
+    font-size: 23px;
+    margin-left: 40px;
+  }
+
+  .products {
+    top: 110px;
+    position: relative;
+  }
+
+  .product-card .purchase {
+    font-size: 17px;
+  }
+
+  .contact-us{
+    top: 80px;
+    position: relative;
+  }
+
+  .contact-head h1 {
+    font-size: 23px;
+    margin-left: 40px;
+  }
+
+  .contact-form {
+    width: 50px;
+  }
+
+  label {
+    left: -120px;
+    position: relative;
+  }
+
+  .submit {
+    left: -120px;
+    position: relative;
+  }
+
+  .prof-head h1 {
+      font-size: 23px;
+      margin-left: 40px;
+  }
+}
+
+@media (max-width: 375px){
+  h1 {
+    font-size: 14px;
+  }
+
+  .dropdown-content a:hover {
+    font-size: 11px;
+  }
+
+  .link{
+    font-size: 1px;
+  }
+
+  .main-head {
+    font-size: 32px;
+    width: 275%;
+    left: -140px;
+  }
+
+.main-text .main-one {
+    left: -90px;
+    position: relative;
+    font-size: 10px;
+  }
+
+  .contact {
+    font-size: 11px;
+    margin-left: 135px;
+  }
+
+  .main {
+    height: 120vh;
+  }
+
+
+.course-box {
+  width: 90%;
+  margin: 0 auto;
+}
+.course-box .one {
+  width: 35%;
+  margin-bottom: 10px;
+}
+
+.course-box .one ul {
+  padding-left: 10px;
+}
+
+.course-box .one a {
+  font-size: 12px;
+  display: block;
+  max-width: 100%; 
+  overflow: hidden; 
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.course-box .dentals {
+  left: -22px;
+  position: relative;
+  padding: 12px;
+  width: 729px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-box .orals {
+  left: 45px;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.course-box .anatomy {
+  left: 112px;
+  position: relative;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.edu-card {
+  height: 44vh;
+}
+
+.txt {
+  top: 5px;
+}
+
+.research {
+  top: 520px;
+  height: 105vh;
+}
+
+.research-card{
+  height: 74vh;
+}
+
+.products-head {
+  margin-top: 440px;
+}
+
+.contact-us {
+  top: 420px;
+}
+
+
+.footer {
+  margin-top: 560px;
+}
+
 
 }
